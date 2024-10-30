@@ -1,0 +1,460 @@
+
+body.home {
+    /*classfies this as the home page */
+    background-image: url('../Images/background.png'); /* Your background image path */
+    background-attachment: fixed;
+    background-size: cover; /* makes the image fit the whole backrground */
+    background-repeat: no-repeat;
+    /* Other background styles */
+}
+body {
+    color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar {
+    position: fixed; /*bar stays fixed at top */
+    top: 0; 
+    left: 0; /* extends bar all the way left and right */
+    width: 100%;
+    height: 50px;
+    background-color: #dfedfc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add a subtle shadow */
+    z-index: 99; /* Ensure the bar stays on top of other content */
+    font-family:Papyrus, fantasy;
+}
+
+.heading {
+    text-align:center;
+    font-size: 27px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: translateY(280%);
+    /* adjusts how high or low text is*/
+}
+
+.line {
+    width: 200%;
+    border: 2px solid white;
+    position: relative; 
+    top: 150px; 
+    right: 200px;
+    /*opposite left right, only for lines */
+
+}
+
+.subheading {
+    text-align: center;
+    font-size: 24px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: translateY(270%);
+}
+
+a {
+    /*targets anchor tags */
+        text-decoration: none; /* Remove default underline */
+        color: inherit; 
+}
+
+.app a:hover {  /* Targets anchor tags within the element with class Links */
+    color: blue; /* Change text color on hover */
+    text-decoration: underline blue;
+}
+
+.line2 {
+    width:200%;
+    border: 1.5px solid white;
+    position:relative;
+    top:395px;
+    right:200px;
+}
+
+.options1 {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translateY(1500%) translateX(-275px);
+    position: relative;
+    ::before {
+        content: ""; /*empty content to create box */
+        position: absolute; 
+        top: -5px; /* affects how high or low box is */
+        right: 330px;
+        width: 25%;
+        height: 70%; /* Set the height to encompass the text */
+        border: 4px solid white;
+        padding: 1%; /* creates room in box */
+        background-color: rgb(178, 194, 212);
+        z-index: -1;
+    /*USING TRANSFORM IS RETARDED AND MAKES STUFF WAY TOO COMPLICATED*/
+    }
+}
+
+.options2 {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translateY(1310%) translateX(-50px);
+    position: relative;
+    ::before {
+        content: ""; 
+        position: absolute; 
+        top: -5px; 
+        right: 338px;
+        width: 25%;
+        height: 70%;
+        border: 4px solid white;
+        padding: 1%; 
+        background-color: rgb(178, 194, 212);
+        z-index: -1;
+    }
+}
+
+.options3 {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translateY(1120%) translateX(175px);
+    position: relative;
+    ::before {
+        content: ""; 
+        position: absolute;
+        top: -5px; 
+        right: 342px;
+        width: 22%;
+        height: 70%; 
+        border: 4px solid white;
+        padding: 1%; 
+        background-color: rgb(178, 194, 212);
+        z-index: -1;
+    }
+}
+
+.options4 {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translateY(940%) translateX(400px);
+    position: relative;
+    ::before {
+        content: ""; 
+        position: absolute;
+        top: -5px; 
+        right: 310px;
+        width: 30%;
+        height: 70%; 
+        border: 4px solid white;
+        padding: 1%; /* creates room in box */
+        background-color: rgb(178, 194, 212);
+        z-index: -1;
+    }
+}
+
+.options5 {
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translateY(750%) translateX(625px);
+    position: relative;
+    ::before {
+        content: ""; 
+        position: absolute;
+        top: -5px; 
+        right: 350px;
+        width: 20%;
+        height: 70%; 
+        border: 4px solid white;
+        padding: 1%; 
+        background-color: rgb(178, 194, 212);
+        z-index: -1;
+    }
+}
+
+/*CODE FOR THE SECONDARY LINKS----------------------*/
+.Home {
+    position: absolute;
+    top: 10px;
+    left: 575px;
+    font-size:22px;
+    font-family: Papyrus, fantasy;
+}
+
+.options-access {
+    /*links to seperate page */
+    background-color: #f6e6b7;
+
+}
+
+.dome {
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 40px;
+    left: 525px;
+    text-decoration: underline;
+}
+
+/*CODE FOR ABOUT ME*/
+.image img{
+    width: autopx; /* Maintain image dimensions */
+    height: 215px;
+    position:absolute;
+    top: 150px;
+    left:-400px;
+    border: 1px solid black;
+}
+
+.image2 img{
+    width: autopx; /* Maintain image dimensions */
+    height: 215px;
+    position:absolute;
+    top: 465px;
+    left:390px;
+    border: 1px solid black;
+}
+
+.image3 img{
+    width: autopx; /* Maintain image dimensions */
+    height: 180px;
+    position:absolute;
+    top: 480px;
+    left:-490px;
+    border: 1px solid black;
+}
+
+.line3 {
+    width:1000px;
+    border: 1.5px solid black;
+    position:absolute;
+    top: 390px;
+    left: -430px;
+
+}
+
+.line4 {
+    height:280px;
+    border: 1.5px solid black;
+    position:absolute;
+    top: 150px;
+    left: -210px;
+}
+
+.career {
+    line-height: 1.8;
+    font-size: 16px;
+    text-align: right;
+    width: 300px;
+}
+
+.personal {
+    line-height: 35;
+    font-size: 16px;
+    text-align: right;
+    width: 180px;
+}
+
+.Home2 {
+    position: absolute;
+    top: -420px;
+    left: 575px;
+    font-size:22px;
+    font-family: Papyrus, fantasy;
+}
+
+/*CODE FOR RESUME*/
+
+.arrow1 {
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid black; /* Left border for the line */
+    border-top: 12px solid transparent; /* Top border for arrowhead */
+    border-bottom: 12px solid transparent;
+}
+
+.arrow-wrapper {
+    margin-top: 200px; /* Move down 100px */
+    margin-left: -150px; /* Move left 50px */
+}
+
+.arrow2 {
+    width: 0px;
+    height: 0px;
+    border-left: 7px solid black; /* Left border for the line */
+    border-top: 12px solid transparent; /* Top border for arrowhead */
+    border-bottom: 12px solid transparent;
+}
+
+.arrow-wrapper2 {
+    margin-top: 230px; /* Move down 100px */
+    margin-left: -1px; /* Move left 50px */
+}
+
+.line5 {
+    width:400px;
+    border: 1.8px solid black;
+}
+
+.line-wrapper {
+    margin-top: -265.5px; /* Move down 100px */
+    margin-left: -400px; /* Move left 50px */
+}
+
+.line6 {
+    width:400px;
+    border: 1.8px solid black;
+}
+
+.line-wrapper2 {
+    margin-top: 250px; /* Move down 100px */
+    margin-left: 0px; /* Move left 50px */
+}
+
+.text {
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.text-wrapper {
+    margin-top: -230px; /* Move down 100px */
+    margin-left: 80px;
+}
+
+.text2 {
+    font-size: 40px;
+    font-family:broadway;
+    text-decoration: underline;
+}
+
+.text-wrapper2 {
+    margin-left: 10px;
+}
+
+.bresume {
+    margin-top: 100px;
+    margin-left: -350px;
+    width: 80%; /* Adjust the container width as needed */
+    height: 400px; /* Adjust the container height as needed */
+}
+
+.bresume embed {
+    width: 700%; /* Make the PDF viewer fill the container's width */
+    height: 100%; /* Make the PDF viewer fill the container's height */
+}
+
+/* CODE FOR COMING NEXT */
+.dome-wrapper {
+    margin-top: 80px; /* Move down 100px */
+    margin-left: -590px;
+    font-size: 60px;
+    font-family: Broadway;
+}
+.Home3 {
+    position: absolute;
+    top: 50px;
+    left: 1150px;
+    font-size:22px;
+    font-family: Papyrus, fantasy;
+}
+
+.line7 {
+    width:290px;
+    border:1.8px solid black;
+}
+
+.line-wrapper3 {
+    margin-top: -50px; /* Move down 100px */
+    margin-left: -500px; /* Move left 50px */
+}
+
+.line8 {
+    width:210px;
+    border: 1.8px solid black;
+}
+
+.line-wrapper4 {
+    margin-top: 15px; /* Move down 100px */
+    margin-left: 40px; /* Move left 50px */
+}
+.line9 {
+    width:140px;
+    border: 1.8px solid black;
+}
+
+.line-wrapper5 {
+    margin-top: 15px; /* Move down 100px */
+    margin-left: 35px; /* Move left 50px */
+}
+
+.line10 {
+    width:70px;
+    border: 1.8px solid black;
+}
+
+.line-wrapper6 {
+    margin-top: 15px; /* Move down 100px */
+    margin-left: 35px; /* Move left 50px */
+}
+
+.text-wrapper3 {
+    margin-top: 100px; /* Move down 100px */
+    margin-left: -600px; /* Move left 50px */
+    font-size: 20px;
+    width:900px;
+}
+
+.options2-access {
+    /*links to seperate page */
+    background-image: url('../Images/background3.png'); /* Your background image path */
+    background-attachment: fixed;
+    background-size:cover; /* makes the image fit the whole backrground */
+    background-repeat: no-repeat;
+
+}
+
+/*CONTACT FORM */
+.contact-form {
+    width: 400px; /* Adjust width as needed */ /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #f5f5f5; /* Light background color */
+    margin-top: 70px;
+    margin-left: 0px;
+  }
+  
+  .contact-form h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  .contact-form label {
+    display: block; /* Make labels on separate lines */
+    margin-bottom: 5px; /* Add space below labels */
+    font-weight: bold; /* Bold text for labels */
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"] {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #ccc; /* Add border to input fields */
+    border-radius: 3px; /* Add rounded corners to input fields */
+  }
+  
+  .contact-form textarea {
+    width: 100%; /* Make textarea full width */
+    padding: 10px; /* Add padding to textarea */
+    border: 1px solid #ccc; /* Add border to textarea */
+    border-radius: 3px; /* Add rounded corners to textarea */
+    resize: vertical; /* Allow resizing the textarea vertically */
+  }
+  
+  .contact-form button {
+    background-color: #4CAF50; /* Green background color for button */
+    color: white; /* White text color for button */
+    padding: 10px 20px; /* Add padding to button */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners to button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .contact-form button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
